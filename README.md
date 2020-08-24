@@ -67,3 +67,5 @@ Enter address of system@plt
 heapexecute.c  main  main1  main.c  Makefile  signal  signal.c	vnag  vnag2
 #
 ```
+#Mitigation
+Lazy binding is enabled by default. The issue can be mitigated by marking GOT as RELRO i.e by compiling the executable with the linker flag -Wl,-z -Wl,now
